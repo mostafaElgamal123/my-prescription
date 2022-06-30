@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best notification</title>
+    <link rel="icon" href="content/images/logo-page/istockphoto-1131552689-612x612.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="content/css/vendors/all.css">
+    <link rel="stylesheet" href="content/css/main/style.css">
+    <link rel="stylesheet" href="content/css/main/style-media.css">
+</head>
+<body>
+
+             <!--search for doctor-->
+             <div class="items-search">
+                 <button class="btn-exist-search">
+                     <span>exist</span>
+                 </button>
+                 <div class="container">
+                    <div class="input-search">
+                        <input onkeyup="searchHomeDoctor(this.value.toUpperCase())" id="search-home" type="search" placeholder="search">
+                        <button onclick="selectTypeSearchHome(this.id)" id="search-by-name">search by name</button>
+                        <button onclick="selectTypeSearchHome(this.id)" id="search-by-specialty">search by specialty</button>
+                    </div>
+                    <div class="output-search">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">doctor name</th>
+                                    <th scope="col">rate</th>
+                                    <th scope="col">specialty</th>
+                                    <th scope="col">locations</th>
+                                    <th scope="col">appoinment</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="tbody-search-doctor">
+                                  
+                                </tbody>
+                              </table>
+                          </div>
+                    </div>
+                 </div>
+             </div>
+             <!--end search for doctor-->
+             <!--loading-->
+             <div class="loading">
+                <div class="lds-heart"><div></div></div>
+             </div>
+             <!--end loading-->
+               <!--header asd-->
+               <header class="header">
+                <div class="menu">
+                    <div class="icon-page">
+                        <a href="doctor-profile.html"><img class="fluid" src="content/images/logo-page/istockphoto-1131552689-612x612.jpg" alt=""></a>
+                    </div>
+                    <div class="toggle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="menu-list hiddin">
+                        <div class="avatar">
+                            <img class="fluid" src="content/images/avatar-logo/team-2.png" alt="">
+                        </div>
+                    <ul>
+                        <li><a href="index.html">
+                        <i class="icon-style fa fa-home" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="doctors.html">
+                            <i class="icon-style fa fa-user-md" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="lab-page.html">
+                            <i class="icon-style fa fa-flask" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="staff.html">
+                            <i class="icon-style fa fa-user" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="purchase.html">
+                            <i class="icon-style fa fa-medkit" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="dashborad-doctor-request.html">
+                            <i class="icon-style fa fa-tachometer-alt" aria-hidden="true"></i>
+                        </a></li>
+                            
+                            
+                    </ul>
+                    <div class="logout">
+                        <a href="index.html">
+                            <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="open-section">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="items-sections hide">
+                    <div class="container py-4">
+                        <h2>section</h2>
+                        <div class="section">
+                        <div class="row g-4">
+                            <div class="col-12 col-md-6">
+                                <a href="#!">
+                                    <span>chets</span>
+                                    <p><i class="icon-section fa fa-stethoscope" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <a href="#!">
+                                    <span>chets</span>
+                                    <p><i class="icon-section fa fa-stethoscope" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <a href="#!">
+                                    <span>chets</span>
+                                    <p><i class="icon-section fa fa-stethoscope" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <a href="#!">
+                                    <span>chets</span>
+                                    <p><i class="icon-section fa fa-stethoscope" aria-hidden="true"></i></p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <a class="view-all" href="#!">
+                                    view all
+                                </a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="ask-free">
+                            <img src="content/images/home-img/images.jfif" alt="">
+                            <a href="#!">free asking about covide-19</a>
+                        </div>
+                    </div>
+                </div>                
+               </header>
+              <!--end header asd-->
+
+               <main>
+               <!-- content page -->
+               <div class="container py-4">
+                <div class="row g-4">
+                <div class="col-12">
+                <div class="header-page align-items-center d-flex justify-content-between flex-wrap">
+                    <a href="#!" class="logo-page">
+                        <img class="fluid" src="content/images/logo-page/istockphoto-1131552689-612x612.jpg" alt="">
+                        <h1>Best notification</h1>
+                    </a>
+                    <div class="social align-items-center d-flex justify-content-between">
+                        <ul>
+                            <li><a href="#i">
+                                <i class="icon-social fab fa-facebook-square" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="#i">
+                                <i class="icon-social fab fa-instagram-square" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="#i">
+                                <i class="icon-social fab fa-twitter-square" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="#i">
+                                <i class="icon-social fab fa-google-plus-square" aria-hidden="true"></i>
+                            </a></li>
+                            
+                        </ul>
+                        <div class="lang d-flex align-items-center">
+                            <a href="#!">ع</a>
+                            <a class="active" href="#!">en</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-page">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="content">
+                                <h3>hello</h3>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                <a href="#!">
+                                    <span>make an appoin</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex">
+                            <div class="home-img">
+                                <img src="content/images/home-img/istockphoto-1214753465-612x612.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="option">
+                                <div class="row g-2">
+                                    <div class="col-12 col-md-4">
+                                           <a id="click-search-home" href="#!">
+                                            <i class="icon-option fa fa-search" aria-hidden="true"></i>
+                                            <span>
+                                                1
+                                                <i></i>
+                                            </span>
+                                           </a>
+                                           <p>search for a doctor</p>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <a href="doctors.html">
+                                         <i class="icon-option fa fa-user-md" aria-hidden="true"></i>
+                                         <span>
+                                             2
+                                             <i></i>
+                                         </span>
+                                        </a>
+                                        <p>select a doctor</p>
+                                 </div>
+                                 <div class="col-12 col-md-4">
+                                    <a href="doctors.html">
+                                     <i class="icon-option fa fa-list-alt" aria-hidden="true"></i>
+                                     <span>
+                                         3
+                                         <i></i>
+                                     </span>
+                                    </a>
+                                    <p>make an appoinment</p>
+                             </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              <!-- end content page right -->
+               </div>
+              </div>
+               <!-- end content page -->
+
+          </main>
+
+
+
+    <!--jquery-->
+    <script src="content/js/vendors/jquery.js"></script>
+    <!--font js-->
+    <script src="content/js/vendors/all.min.js"></script>
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--js page-->
+    <script src="content/js/main/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best notification</title>
+    <link rel="icon" href="content/images/logo-page/istockphoto-1131552689-612x612.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="content/css/vendors/all.css">
+    <link rel="stylesheet" href="content/css/main/style.css">
+    <link rel="stylesheet" href="content/css/main/style-media.css">
+</head>
+<body style="overflow-y: auto; display: block;">
+    <!--loading-->
+    <div class="loading">
+        <div class="lds-heart"><div></div></div>
+     </div>
+     <!--end loading-->
+      <!--dash-header-->
+      <div class="dash-header">
+        <div class="dash-menu">
+            <div class="logout">
+                <a href="index.html">
+                    <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="avatar-details">
+                <img class="fluid" src="content/images/images-section/doctor-img/istockphoto-1161336374-612x612.jpg" alt="">
+                <h2>dr.mostafa elgamal</h2>
+            </div>
+            <div class="toggle-dash">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav>
+                <div class="logo">
+                    <img class="fluid" src="content/images/images-section/doctor-img/istockphoto-1161336374-612x612.jpg" alt="">
+                </div>
+                <ul>
+                    <li><a href="dashborad-doctor-request.html">request</a></li>
+                    <li><a href="dashborad-doctor-appoinment.html">appoinment</a></li>
+                    <li><a href="dashborad-doctor-chat.html">chat</a></li>
+                </ul>
+                <div class="logout">
+                    <a href="index.html">
+                        <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+      <!--end dash-header-->
+      <!--page content-->
+      <div class="container py-5">
+        <div class="group-search-patient">
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                <option selected>type search</option>
+                <option value="1">patient</option>
+                <option value="2">lap</option>
+            </select>
+            <div class="btn-search">
+                <input type="text" placeholder="search">
+                <i class="icon-search fa fa-search"></i>
+            </div>
+            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                <option selected>Open this select day</option>
+                <option value="1">saturday</option>
+                <option value="2">friday</option>
+                <option value="3">thursday</option>
+                <option value="4">wednesday</option>
+                <option value="5">tuesday</option>
+                <option value="6">monday</option>
+                <option value="7">sunday</option>
+            </select>
+        </div>
+        <div class="table-patient">
+            <h2><i class="fa fa-table" aria-hidden="true"></i> <span>request patient</span></h2>
+          <div class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">patient name</th>
+                    <th scope="col">Appoinment date</th>
+                    <th scope="col">appoinment time</th>
+                    <th scope="col">accept or reject</th>
+                    <th scope="col">delete</th>
+                  </tr>
+                </thead>
+                <tbody id="tobody-appoinment">
+                  
+                </tbody>
+              </table>
+          </div>
+        </div>
+        <div class="table-lap">
+            <h2><i class="fa fa-flask" aria-hidden="true"></i> <span>request lap</span></h2>
+          <div class="table-responsive">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">patient name</th>
+                    <th scope="col">lap name</th>
+                    <th scope="col">patient's condition</th>
+                    <th scope="col">note</th>
+                    <th scope="col">delete</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>mostafa</td>
+                    <td>lap</td>
+                    <td>
+                        <div class="patient-test">
+                            <a href="#!">
+                                <i class="fa fa-file-word" aria-hidden="true"></i>
+                                <span>test</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="text-note">
+                            <input type="text" placeholder="enter note">
+                            <i class="icon-user fa fa-user-md" aria-hidden="true"></i>
+                            <a class="active" href="#!">
+                                send
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <a class="btn-delete" href="#!">
+                            delete
+                        </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+      <!--end page content-->
+    <!--jquery-->
+    <script src="content/js/vendors/jquery.js"></script>
+    <!--font js-->
+    <script src="content/js/vendors/all.min.js"></script>
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--js page-->
+    <script src="content/js/main/js.js"></script>
+</body>
+</html>

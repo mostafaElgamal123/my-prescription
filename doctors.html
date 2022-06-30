@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best notification</title>
+    <link rel="icon" href="content/images/logo-page/istockphoto-1131552689-612x612.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="content/css/vendors/all.css">
+    <link rel="stylesheet" href="content/css/main/style.css">
+    <link rel="stylesheet" href="content/css/main/style-media.css">
+</head>
+<body> 
+             <!--loading-->
+             <div class="loading">
+                <div class="lds-heart"><div></div></div>
+             </div>
+             <!--end loading-->
+              <!--header asd-->
+              <header class="header">
+                <div class="menu">
+                    <div class="icon-page">
+                        <a href="doctor-profile.html"><img class="fluid" src="content/images/logo-page/istockphoto-1131552689-612x612.jpg" alt=""></a>
+                    </div>
+                    <div class="toggle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="menu-list hiddin">
+                        <div class="avatar">
+                            <img class="fluid" src="content/images/avatar-logo/team-2.png" alt="">
+                        </div>
+                    <ul>
+                        <li><a href="index.html">
+                        <i class="icon-style fa fa-home" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="doctors.html">
+                            <i class="icon-style fa fa-user-md" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="lab-page.html">
+                            <i class="icon-style fa fa-flask" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="staff.html">
+                            <i class="icon-style fa fa-user" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="purchase.html">
+                            <i class="icon-style fa fa-medkit" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="dashborad-doctor-request.html">
+                            <i class="icon-style fa fa-tachometer-alt" aria-hidden="true"></i>
+                        </a></li>
+                            
+                            
+                    </ul>
+                    <div class="logout">
+                        <a href="index.html">
+                            <i class="fa fa-sign-out-alt" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="items-sections hide">
+                    <div class="open-section">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="container py-4">
+                        <div class="staf-group">
+                          <a href="#!">
+                            <i class="icon-staf fa fa-user-md" aria-hidden="true"></i>
+                            <span>doctors</span>
+                          </a>
+                          <a href="#!">
+                            <i class="icon-staf fa fa-money-bill" aria-hidden="true"></i>
+                            <span>High Price</span>
+                          </a>
+                          <a href="#!">
+                            <i class="icon-staf fa fa-money-bill" aria-hidden="true"></i>
+                            <span>Lowest Price</span>
+                          </a>
+                          <a href="#!">
+                            <i class="icon-staf fa fa-star" aria-hidden="true"></i>
+                            <span>High Rated</span>
+                          </a>
+                          <a href="#!">
+                            <i class="icon-staf fa fa-clock" aria-hidden="true"></i>
+                            <span>Faster</span>
+                          </a>
+                          <a href="#!">
+                            <i class="icon-staf fa fa-check-circle" aria-hidden="true"></i>
+                            <span>Verified</span>
+                          </a>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  cario
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <img src="content/images/images-section/doctor-img/istockphoto-1161336374-612x612.jpg" alt="">
+                                    <h3>hospital</h3>
+                                    <h4>nurest to you</h4>
+                                    <p>call:01122455867</p>
+                                    <p>call:01122455867</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>                  
+               </header>
+              <!--end header asd-->
+    <main>
+                <!-- content page -->
+                <div class="container py-4">
+                    <div class="row g-4">
+                         <div class="col-12">
+                            <div class="menu-page d-flex justify-content-between align-items-center flex-wrap">
+                                <h2>doctors</h2>
+                                <div class="search">
+                                    <a href="#!">
+                                        <input onkeyup="searchDoctor(this.value.toUpperCase());selectTypeSearch(this.id)" id="search-by" type="text" placeholder="search by city">
+                                        <i class="icon-search fa fa-map-marker-alt" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="#!">
+                                        <input onkeyup="searchDoctor(this.value.toUpperCase());selectTypeSearch(this.id)" id="search" type="text" placeholder="search">
+                                        <i class="icon-search fa fa-search" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                             <div class="categories">
+                                 <ul>
+                                     <li class="active" ><a href="#!">All</a></li>
+                                     <li><a href="#!">Stomach</a></li>
+                                     <li><a href="#!">Eyes</a></li>
+                                     <li><a href="#!">Chest</a></li>
+                                     <li><a href="#!">Lung</a></li>
+                                     <li><a href="#!">Cardiology</a></li>
+                                     <li><a href="#!">Brain</a></li>
+                                     <li><a href="#!">Sergey</a></li>
+                                 </ul>
+                                 <div class="more hiden">
+                                     <span>more...</span>
+                                 </div>
+                             </div>
+                             <section class="items-doctors">
+                                <div class="row g-5" id="tobodyDoctor">
+                                    
+                                </div>
+                                <!--pagination-->
+                                <div class="pagination">
+                                    <ul>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- end pagination-->
+                             </section>
+                        </div>
+                </div>
+              </div>
+              <!-- end content page -->
+
+    </main>
+
+
+
+    <!--jquery-->
+    <script src="content/js/vendors/jquery.js"></script>
+    <!--font js-->
+    <script src="content/js/vendors/all.min.js"></script>
+    <!--js bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!--js page-->
+    <script src="content/js/main/js.js"></script>
+</body>
+</html>
